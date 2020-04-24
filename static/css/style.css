@@ -23,6 +23,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 .mediaIcons a {
@@ -52,7 +53,6 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 }
 
 .aboutme h4 {
-  margin-top: -169px;
   text-align: center;
 }
 
@@ -73,6 +73,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 
 .header.navi img {
   box-shadow: 0px 0px 13px black;
+  opacity: .9;
 }
 
 .navi span {
@@ -189,7 +190,9 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 
 .skills .card {
   color: black;
-  text-shadow: none;
+  text-shadow: 0px 0px 30px white;
+  opacity: .9;
+  background: linear-gradient(90deg, rgba(0,0,-1,-0.865109) 0%, rgba(255,255,255,1) 143%);
 }
 
 .skills .btn {
@@ -216,7 +219,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 
 .card .card-title {
   font-size: 33px;
-  text-align: left;
+  text-align: center;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
@@ -238,16 +241,24 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 	opacity: .8;
 }
 
-.music .parallax-container {
-  border-top: 18px solid white;
+.tap-target-wave::before {
+  background: linear-gradient(360deg, rgba(0,0,0,0.004891) 0%, rgba(255,255,255,1) 166%);
 }
 
-.webdesign .parallax-container {
-  border-bottom: 18px solid white;
+.tap-target-wave:hover {
+  background: white;
 }
+
+
 .parallax-container {
 	top: -266px;
   z-index: 100;
+  box-shadow: 0px 0px 30px black;
+    opacity: .8;
+}
+
+.parallax-container img {
+
 }
 
 .yesdevil .tap-target {
@@ -255,9 +266,22 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   background-position: center;
 }
 
-.bc .card-content {
+.card .card-content {
   padding: 24px 24px 0px 24px;
 }
+
+.bc.card .card-image img {
+  width: 63%;
+  margin: auto;
+  margin-top: 9px;
+}
+
+.fh.card .card-image img {
+  width: 51%;
+  margin: auto;
+}
+
+/*------HOVER CSS------*/
 
 
 .hvr-float-shadow {
