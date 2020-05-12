@@ -9,7 +9,8 @@ $(document).ready( f => {
 	  onClose: () => window.location(this.href) 
 	 }
 
-
+	$('.tabs').tabs()
+	$('.tabs').tabs('updateTabIndicator')
 
 	var musicTT = document.querySelector('.music .tap-target')
 
@@ -43,12 +44,12 @@ $(document).ready( f => {
 	        <div class="tap-target" data-target="link2music">
 	          <div class="tap-target-content">
 	            <h5>Musician</h5>
-	            <p>Drummer. Guitarist. Singer. Songwriter.</p>
+	            <p>Singer. Songwriter. Guitarist. Drummer.</p>
 	          </div>
 	        </div>
 
 	        <div class="parallax-container">
-	          <div class="parallax"><img src="../static/css/images/musick6.jpg"></div>
+	          <div class="parallax"><img src="../static/css/images/musick6.png"></div>
 	        </div>`)
 
         var musicTT = document.querySelector('.music .tap-target')
@@ -64,7 +65,7 @@ $(document).ready( f => {
 	          </div>
 	        </div>
 	        <div class="parallax-container">
-	          <div class="parallax"><img src="../static/css/images/webdesign1.jpg"></div>
+	          <div class="parallax"><img src="../static/css/images/webdesign1.png"></div>
 	        </div>`)
 
 		var wdTT = document.querySelector('.webdesign .tap-target')
@@ -116,7 +117,7 @@ $(document).ready( f => {
 	          <div class="tap-target" data-target="link2lh">
 	            <div class="tap-target-content">
 	              <h5>Little Hollow</h5>
-	              <p>Genre: Indie Folk.</p>
+	              <p>Genre: Acoustic Folk.</p>
 	            </div>
 	          </div>
 	          <div class="parallax-container">
@@ -194,7 +195,7 @@ $(document).ready( f => {
           <div class="tap-target" data-target="link2lh">
             <div class="tap-target-content">
               <h5>Little Hollow</h5>
-              <p>Genre: Indie Folk.</p>
+              <p>Genre: Acoustic Folk.</p>
             </div>
           </div>
           <div class="parallax-container">

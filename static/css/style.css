@@ -49,7 +49,9 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   text-align: center;
   font-size: 30px;
   color: white;
-  text-shadow: 0px 0px 30px black;
+  text-shadow: 0px 0px 3px black;
+  margin-top: -172px;
+  display: inline-block;
 }
 
 .aboutme h4 {
@@ -61,7 +63,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 	list-style: none;
   padding: 0;
   color: white;
-  text-shadow: 0px 0px 30px black;
+  text-shadow: 0px 0px 3px black;
 }
 
 
@@ -132,14 +134,32 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 
 .phone {
   float: left;
+  text-align: center;
 }
 
 .email {
   float: right;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone {
+    float: none;
+  }
+
+  .email {
+    float: none;
+  }
 }
 
 .contact hr {
   margin-bottom: 36px;
+}
+
+.contact h5 {
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  text-align: center;
 }
 
 .bottom.mediaIcons {
@@ -147,6 +167,12 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,255,255,1) 100%);
   margin-top: 111px;
   height: 122px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom.mediaIcons {
+    margin-top: 70px;
+  }
 }
 
 .contact a {
@@ -185,7 +211,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   position: relative;
   top: -266px;
   color: white;
-  text-shadow: 0px 0px 30px black;
+  text-shadow: 0px 0px 3px black;
 }
 
 .skills .card {
@@ -194,6 +220,93 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
   opacity: .9;
   background: linear-gradient(90deg, rgba(0,0,-1,-0.865109) 0%, rgba(255,255,255,1) 143%);
 }
+
+#whatido {
+  margin: 81px auto;
+}
+
+.tabs {
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.tabs .tab a {
+  color: white;
+  font-size: 27px;
+  box-shadow: 0px 0px 115px black;
+
+}
+
+.tabs .tab a:hover {
+  color: white;
+  background-color: rgb(255,255,255,0.2);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgb(255,255,255,0.2);
+  color: white;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: white;
+  background-color: rgb(255,255,255,0.2);
+}
+
+.tabs .indicator {
+  background-color: white;
+}
+
+.tabs .material-icons {
+  font-size: 47px;
+  text-shadow: 0px 0px 58px black;
+  position: relative;
+}
+
+.category {
+  position: relative;
+  top: -15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabs .material-icons {
+      font-size: 37px;
+      top: 5px;
+    }
+
+    .tabs .tab a {
+      font-size: 22px;
+    }
+
+    .category {
+      top: -6px;
+    }
+
+}
+
+
+@media only screen and (max-width: 582px) {
+    .tabs .material-icons {
+      font-size: 30px;
+      top: 9px;
+    }
+
+    .tabs .tab a {
+      font-size: 17px;
+    }
+
+    .category {
+      top: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 582px) {
+  .category {
+    display: none;
+  }
+
+}
+
 
 .skills .btn {
   font-size: 27px;
@@ -253,7 +366,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 .parallax-container {
 	top: -266px;
   z-index: 100;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 3px black;
     opacity: .8;
 }
 
