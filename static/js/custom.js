@@ -12,6 +12,8 @@ $(document).ready( f => {
 	$('.tabs').tabs()
 	$('.tabs').tabs('updateTabIndicator')
 
+	$('#artists.carousel').carousel({indicators: true})
+
 	var musicTT = document.querySelector('.music .tap-target')
 
 	var instance = M.TapTarget.init(musicTT, options, true)
@@ -219,7 +221,6 @@ $(document).ready( f => {
 
 
 	 $('.link2wd').click( f => {
-	 	console.log('hi')
 	 	$('.yesdevil').hide()
 	 	$('.littlehollow').hide()
 	 	$('.music').fadeOut()
@@ -241,6 +242,8 @@ $(document).ready( f => {
 	 $('.yesdevil a').click( f=> {
 	 	window.open('www.yesdevil.com')
 	 })
+
+
 
 
 

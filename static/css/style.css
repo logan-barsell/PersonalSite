@@ -217,8 +217,32 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 .skills .card {
   color: black;
   text-shadow: 0px 0px 30px white;
-  opacity: .9;
+  opacity: 1;
   background: linear-gradient(90deg, rgba(0,0,-1,-0.865109) 0%, rgba(255,255,255,1) 143%);
+}
+
+.carousel {
+  left: -46px;
+  height: 513px;
+  perspective: 1000px;
+  overflow: visible;
+}
+
+.carousel .carousel-item {
+  width: 300px;
+  top: -92px;
+  left: 14px;
+}
+
+.carousel .indicators .indicator-item {
+  height: 12px;
+  width: 12px;
+  margin: -77px 7px;
+  border-radius: 33%;
+}
+
+.carousel .indicators .indicator-item.active {
+  box-shadow: 0px 0px 27px white;
 }
 
 #whatido {
@@ -296,16 +320,15 @@ background: linear-gradient(90deg, rgba(0,0,0,0.13489145658263302) 0%, rgba(255,
 
     .category {
       top: 0px;
+      display: none;
+    }
+
+    .skills .card {
+      width: 272px;
     }
 
 }
 
-@media only screen and (max-width: 582px) {
-  .category {
-    display: none;
-  }
-
-}
 
 
 .skills .btn {
